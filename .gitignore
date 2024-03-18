@@ -1,0 +1,16 @@
+.DS_Store
+echo "##active_line2##"
+__pycache__
+echo "##active_line3##"
+echo "##active_line4##"
+*.txt
+echo "##active_line5##"
+*.json
+echo "##active_line6##"
+echo "##active_line7##"
+*.svg
+echo "##active_line2##"
+*.tex
+参考資料/
+maltimodal/研修用/gomi/
+manim/media/videos/moe/1080p60/partial_movie_files/MixtureOfExperts/
