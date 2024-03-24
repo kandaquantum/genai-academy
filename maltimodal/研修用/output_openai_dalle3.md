@@ -56,14 +56,14 @@ image_url = response.data[0].url
 <summary>問題1: DALL·E 3 で生成できる画像の最大サイズは？</summary>
 
 a. 512x512
-b. 1024x1024
+b. 1792x1024
 c. 1792x1792
 d. 2048x2048
 
 <details>
 <summary>回答と解説</summary>
 
-回答: b. 1024x1024
+回答: b. 1792x1024
 
 DALL·E 3 では、1024x1024, 1024x1792, 1792x1024 の3つのサイズから選択できます。最大サイズは 1792x1024 です。
 </details>

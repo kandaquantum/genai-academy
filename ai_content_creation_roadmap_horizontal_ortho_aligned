@@ -1,0 +1,96 @@
+// AI Content Creation Roadmap
+digraph {
+	graph [nodesep=0.2 rankdir=LR splines=ortho]
+	"基礎編" [label="基礎編" shape=box]
+	subgraph "cluster_基礎編" {
+		color=green
+		1.2 [label="1.2 ドキュメントプログラム基礎講座" fillcolor=lightblue shape=box style=filled width=4]
+		1.1 [label="1.1 プロンプトプログラム基礎講座" fillcolor=lightblue shape=box style=filled width=4]
+		rank=same
+		"基礎編" -> 1.2
+		"基礎編" -> 1.1
+	}
+	subgraph "cluster_中級編" {
+		color=orange
+		"中級編" [label="中級編" shape=box]
+		2.7 [label="2.7 RAG講座" fillcolor=lightblue shape=box style=filled width=4]
+		2.6 [label="2.6 デプロイ関連講座" fillcolor=lightblue shape=box style=filled width=4]
+		2.5 [label="2.5 バックエンド開発講座" fillcolor=lightblue shape=box style=filled width=4]
+		2.4 [label="2.4 フロントエンド開発講座" fillcolor=lightblue shape=box style=filled width=4]
+		2.3 [label="2.3 GAS講座" fillcolor=lightblue shape=box style=filled width=4]
+		2.2 [label="2.2 マルチモーダル生成AI API基礎講座" fillcolor=lightblue shape=box style=filled width=4]
+		2.1 [label="2.1 Cursor/ Open Interpreter講座" fillcolor=lightblue shape=box style=filled width=4]
+		"中級編" -> 2.7
+		"中級編" -> 2.6
+		"中級編" -> 2.5
+		"中級編" -> 2.4
+		"中級編" -> 2.3
+		"中級編" -> 2.2
+		"中級編" -> 2.1
+	}
+	"応用編" [label="応用編" shape=box]
+	subgraph "cluster_3.1" {
+		color=blue rank=same
+		3.1 [label="3.1 テキストベースのコンテンツ制作" shape=box width=4]
+		"3.1.2" [label="3.1.2 ブログ記事の自動生成講座" shape=box width=4]
+		"3.1.1" [label="3.1.1 20分で書籍1冊（20万文字）執筆講座" fillcolor=lightblue shape=box style=filled width=4]
+		3.1 -> "3.1.2"
+		3.1 -> "3.1.1"
+	}
+	subgraph "cluster_3.2" {
+		color=blue rank=same
+		3.2 [label="3.2 画像コンテンツ制作" shape=box width=4]
+		"3.2.1" [label="3.2.1 画像バナー自動生成講座" fillcolor=lightblue shape=box style=filled width=4]
+		3.2 -> "3.2.1"
+	}
+	3.3 [label="3.3 データ分析とインタープリター" shape=box width=4]
+	subgraph "cluster_3.3" {
+		color=blue rank=same
+		"3.3.2" [label="3.3.2 データ可視化講座" shape=box width=4]
+		"3.3.1" [label="3.3.1 Data Interpreter講座" shape=box width=4]
+		3.3 -> "3.3.2"
+		3.3 -> "3.3.1"
+	}
+	subgraph "cluster_3.4" {
+		color=blue rank=same
+		3.4 [label="3.4 動画コンテンツ制作" shape=box width=4]
+		"3.4.3" [label="3.4.3 Gemini 1ミリオン！ 動画解釈AI講座" fillcolor=lightblue shape=box style=filled width=4]
+		"3.4.2" [label="3.4.2 動画バナー制作講座" shape=box width=4]
+		"3.4.1" [label="3.4.1 Manim動画教材制作講座" fillcolor=lightblue shape=box style=filled width=4]
+		3.4 -> "3.4.3"
+		3.4 -> "3.4.2"
+		3.4 -> "3.4.1"
+	}
+	3.5 [label="3.5 ロボット" shape=box width=4]
+	subgraph "cluster_3.5" {
+		color=blue rank=same
+		"3.5.1" [label="3.5.1 ロボット講座" shape=box width=4]
+		3.5 -> "3.5.1"
+	}
+	3.6 [label="3.6 バーチャルアバター" shape=box width=4]
+	subgraph "cluster_3.6" {
+		color=blue rank=same
+		"3.6.1" [label="3.6.1 バーチャルアバター制作講座" shape=box width=4]
+		3.6 -> "3.6.1"
+	}
+	3.7 [label="3.7 生成AI活用営業講座" rank=sink shape=box width=4]
+	subgraph "cluster_3.7" {
+		color=blue rank=sink
+		"3.7.1" [label="3.7.1 商談議事録作成術" shape=box width=4]
+		"3.7.2" [label="3.7.2 顧客整理術" shape=box width=4]
+		"3.7.3" [label="3.7.3 見積もり作成術" shape=box width=4]
+		"3.7.4" [label="3.7.4 提案資料作成術" shape=box width=4]
+		3.7 -> "3.7.1"
+		3.7 -> "3.7.2"
+		3.7 -> "3.7.3"
+		3.7 -> "3.7.4"
+	}
+	"基礎編" -> "中級編" [style=dashed]
+	"中級編" -> "応用編" [style=dashed]
+	"応用編" -> 3.1 [style=dashed]
+	"応用編" -> 3.2 [style=dashed]
+	"応用編" -> 3.3 [style=dashed]
+	"応用編" -> 3.4 [style=dashed]
+	"応用編" -> 3.5 [style=dashed]
+	"応用編" -> 3.6 [style=dashed]
+}
