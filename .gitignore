@@ -9,6 +9,7 @@ echo "##active_line5##"
 echo "##active_line6##"
 echo "##active_line7##"
 *.svg
+!diagram.svg
 echo "##active_line2##"
 *.tex
 参考資料/
